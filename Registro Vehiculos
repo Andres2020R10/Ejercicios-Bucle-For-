@@ -1,0 +1,20 @@
+Proceso Registro_Vehiculos
+	Definir n, i Como Entero
+	Definir placa, hora, lista Como Cadena
+	lista <- ""
+	
+	Escribir "¿Cuántos vehículos ingresarán al parqueadero?"
+	Leer n
+	
+	Para i <- 1 Hasta n Con Paso 1 Hacer
+		Escribir "Ingrese la placa del vehículo ", i, ":"
+		Leer placa
+		Escribir "Ingrese la hora de ingreso del vehículo ", i, ":"
+		Leer hora
+		
+		lista <- lista + "Vehículo " + ConvertirATexto(i) + ": " + placa + " - Hora: " + hora + "\n"
+	FinPara
+
+	Escribir "RESUMEN DE VEHÍCULOS REGISTRADOS"
+	Escribir lista
+FinProceso
