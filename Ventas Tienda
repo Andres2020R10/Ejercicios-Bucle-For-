@@ -1,0 +1,30 @@
+Proceso Ventas_Tienda
+	Definir n, i, cantidad Como Entero
+	Definir producto Como Cadena
+	Definir precio, subtotal, total Como Real
+	Definir lista Como Cadena
+	
+	lista <- ""
+	total <- 0
+	
+	Escribir "¿Cuántos productos se vendieron?"
+	Leer n
+	
+	Para i <- 1 Hasta n Con Paso 1 Hacer
+		Escribir "Ingrese el nombre del producto ", i, ":"
+		Leer producto
+		Escribir "Ingrese el precio del producto:"
+		Leer precio
+		Escribir "Ingrese la cantidad vendida:"
+		Leer cantidad
+		
+		subtotal <- precio * cantidad
+		total <- total + subtotal
+		lista <- lista + producto + " - Cantidad: " + ConvertirATexto(cantidad) + " - Subtotal: $" + ConvertirATexto(subtotal) + "\n"
+	FinPara
+	
+
+	Escribir "VENTAS REGISTRADAS:"
+	Escribir lista
+	Escribir "Total de ventas: $", total
+FinProceso
