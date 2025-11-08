@@ -1,0 +1,16 @@
+Proceso Suma_Numeros
+	Definir n, i, numero, suma Como Real
+	suma <- 0
+	
+	Escribir "¿Cuántos números desea ingresar?"
+	Leer n
+	
+	Para i <- 1 Hasta n Con Paso 1 Hacer
+		Escribir "Ingrese el número ", i, ":"
+		Leer numero
+		suma <- suma + numero
+	FinPara
+	
+	 
+	Escribir "La suma total de los números es: ", suma
+FinProceso
