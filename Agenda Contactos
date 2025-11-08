@@ -1,0 +1,21 @@
+Proceso Agenda_Contactos
+	Definir n, i Como Entero
+	Definir nombre, telefono, lista Como Cadena
+	lista <- ""
+	
+	Escribir "¿Cuántos contactos desea registrar?"
+	Leer n
+	
+	Para i <- 1 Hasta n Con Paso 1 Hacer
+		Escribir "Ingrese el nombre del contacto ", i, ":"
+		Leer nombre
+		Escribir "Ingrese el número de teléfono:"
+		Leer telefono
+		
+		lista <- lista + nombre + " - Tel: " + telefono + "\n"
+	FinPara
+	
+	
+	Escribir "AGENDA DE CONTACTOS:"
+	Escribir lista
+FinProceso
